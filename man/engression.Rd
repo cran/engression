@@ -22,7 +22,7 @@ engression(
 \arguments{
 \item{X}{A matrix or data frame representing the predictors.}
 
-\item{Y}{A matrix or vector representing the target variable(s).}
+\item{Y}{A matrix or vector representing the target variable(s). If Y is a factor a classification model is fitted (experimental).}
 
 \item{noise_dim}{The dimension of the noise introduced in the model (default: 5).}
 
@@ -30,7 +30,7 @@ engression(
 
 \item{num_layer}{The number of layers in the model (default: 3).}
 
-\item{dropout}{The dropout rate to be used in the model in case no batch normalization is used (default: 0.01)}
+\item{dropout}{The dropout rate to be used in the model in case no batch normalization is used. Only active if batch normalization is off. (default: 0.01)}
 
 \item{batch_norm}{A boolean indicating whether to use batch-normalization (default: TRUE).}
 

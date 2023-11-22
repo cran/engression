@@ -5,11 +5,11 @@
 #' Variables are per default internally standardized (predictions are on original scale).
 #'
 #' @param X A matrix or data frame representing the predictors.
-#' @param Y A matrix or vector representing the target variable(s).
+#' @param Y A matrix or vector representing the target variable(s). If Y is a factor a classification model is fitted (experimental).
 #' @param noise_dim The dimension of the noise introduced in the model (default: 5).
 #' @param hidden_dim The size of the hidden layer in the model (default: 100).
 #' @param num_layer The number of layers in the model (default: 3).
-#' @param dropout The dropout rate to be used in the model in case no batch normalization is used (default: 0.01)
+#' @param dropout The dropout rate to be used in the model in case no batch normalization is used. Only active if batch normalization is off. (default: 0.01)
 #' @param batch_norm A boolean indicating whether to use batch-normalization (default: TRUE).
 #' @param num_epochs The number of epochs to be used in training (default: 1000).
 #' @param lr The learning rate to be used in training (default: 10^-3).
